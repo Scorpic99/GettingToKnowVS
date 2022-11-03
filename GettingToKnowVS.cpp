@@ -39,11 +39,11 @@ int main()
     }
 
     outFile << std::endl << sizeN << std::endl;
-    outFile << arr[sizeN - 1] << " ";
-    for (int i = 0; i < sizeN - 1; i++) {
+    for (int i = 1; i < sizeN; i++) {
         temp = arr[i];
         outFile << temp << " ";
     }
+    outFile << arr[0] << " ";
 
     std::cout << "completed";
     outFile.close();
